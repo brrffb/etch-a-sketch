@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Etch-a-Sketch</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body ondragstart="return false;" ondragend="return false;">
+  <header class="header">
+    <h1 class="header-text">Etch a Sketch</h1>
+  </header>
+  <main>
+    <div class="options">
+      <input type="color" value="#181716" class="colorpicker" id="colorpicker" />
+      <div id="size-display" class="size-display"></div>
+      <input type="range" name="range" id="range" class="range" value="16" min="1" max="64" />
+      <button id="colorModeToggle">Color mode</button>
+      <button id="eraserBtn" class="eraserBtn">Eraser mode</button>
+      <button id="clearGridBtn">Clear grid</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
